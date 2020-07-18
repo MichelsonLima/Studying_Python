@@ -1,4 +1,4 @@
-from sys import exit
+
 from colorama import Fore
 import os
 clear = lambda: os.system('cls')
@@ -32,36 +32,36 @@ def main():
         num2 = float(input(Fore.GREEN + ">>"))
 
         calcu = Calculadora(num1, num2)
-        print("Escolha a operação:")
-        print( " (1) Adição \n (2) Subtração \n (3) Multiplicação \n (4) Divisão\n (5) Sair")
+        print(Fore.CYAN+"Escolha a operação:")
+        print(Fore.MAGENTA+ " (1) Adição \n (2) Subtração \n (3) Multiplicação \n (4) Divisão\n (5) Sair")
         choose = int(input(">>"))
         if choose == 1:
             print(Fore.YELLOW + "O resultado da soma é: "+ str(calcu.soma()))
-            print("Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
+            print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
         elif choose == 2:
             print(Fore.YELLOW + "O resultado da subtração é: "+str(calcu.subtracao()))
-            print("Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
+            print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
         elif choose == 3:
             print(Fore.YELLOW + "O resultado da multiplicação é: "+str(calcu.multiplica()))
-            print("Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
+            print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
         elif choose == 4:   
             print(Fore.YELLOW + "O resultado da divisão é: "+ str(calcu.divisao()))
-            print("Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
+            print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
 
         else:
-            print("Número de operação inválido. Tente novamente.")
+            print(Fore.RED+"Número de operação inválido. Tente novamente.")
             sleep(3)
             clear()
         
