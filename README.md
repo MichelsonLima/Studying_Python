@@ -1,7 +1,8 @@
 # Studying_Python
 Projetos feitos durante minha jornada estudando python
 
-### Projeto 1
+### Projeto 1 - Calculadora Premium
+
 ## Calculadora feita com Orientação Objeto. (melhorias futuramente)
 
 - Bibliotecas usadas:
