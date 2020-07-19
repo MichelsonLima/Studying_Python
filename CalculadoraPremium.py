@@ -1,4 +1,4 @@
-
+from sys import exit
 from colorama import Fore
 import os
 clear = lambda: os.system('cls')
@@ -41,25 +41,49 @@ def main():
             x = int(input(">>"))
             if x == 1:
                 clear()
+            print(Fore.BLUE+"Deseja encerrar sua sessão?\n(1) Sim    (2) Não")
+            y = int(input(">>"))
+            if y == 1:
+                exit()
+                
         elif choose == 2:
             print(Fore.YELLOW + "O resultado da subtração é: "+str(calcu.subtracao()))
             print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
+            print(Fore.BLUE+"Deseja encerrar sua sessão?\n(1) Sim    (2) Não")
+            y = int(input(">>"))
+            if y == 1:
+                exit()    
+                
         elif choose == 3:
             print(Fore.YELLOW + "O resultado da multiplicação é: "+str(calcu.multiplica()))
             print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
+                
+            print(Fore.BLUE+"Deseja encerrar sua sessão?\n(1) Sim    (2) Não")
+            y = int(input(">>"))
+            if y == 1:
+                exit()    
+                
         elif choose == 4:   
             print(Fore.YELLOW + "O resultado da divisão é: "+ str(calcu.divisao()))
             print(Fore.GREEN+"Deseja limpar o dashbord? \nDigite (1) Sim (2) Não ")
             x = int(input(">>"))
             if x == 1:
                 clear()
+                
+            print(Fore.BLUE+"Deseja encerrar sua sessão?\n(1) Sim    (2) Não")
+            y = int(input(">>"))
+            if y == 1:
+                exit()    
 
+        elif choose ==5:
+            exit()
+            
         else:
             print(Fore.RED+"Número de operação inválido. Tente novamente.")
             sleep(3)
