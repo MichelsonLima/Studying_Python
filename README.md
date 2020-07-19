@@ -8,7 +8,7 @@ Projetos feitos durante minha jornada estudando python
 - Bibliotecas usadas:
 1.  **Colorama** -> para colorir as frases. (sou grande adepto de estética)
 2.  **Os** -> usando a função ```clear()``` para limpar o console.
-3. **Sys** -> usando a função ```exit()``` para caso o usuáriodeseje encerrar o programa.
+3. **Sys** -> usando a função ```exit()``` para caso o usuário deseje encerrar o programa.
 
 **N**a classe ```Calculadora()``` está os métodos de operações (básicas) matemáticas.
 
